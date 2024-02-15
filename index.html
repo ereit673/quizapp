@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body onload="init()">
     <nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
@@ -35,19 +35,19 @@
                 </div>
             </div>
             <div class="card questionCard">
-                <h2 class="card-title">What is the capital of Australia?</h2>
+                <h2 class="card-title" id="questionText"></h2>
                 <div class="questionsContainer">
-                    <div class="card-body mb-4"><span class="questionNumber">A</span>
-                        Sydney
+                    <div class="card-body answer-card mb-4" onclick="answer('answer_1')"><span class="questionNumber">A</span>
+                        <span id="answer_1"></span>
                     </div>
-                    <div class="card-body mb-4"><span class="questionNumber">B</span>
-                        Canberra
+                    <div class="card-body answer-card mb-4" onclick="answer('answer_2')"><span class="questionNumber">B</span>
+                        <span id="answer_2"></span>
                     </div>
-                    <div class="card-body mb-4"><span class="questionNumber">C</span>
-                        Melbourne
+                    <div class="card-body answer-card mb-4" onclick="answer('answer_3')"><span class="questionNumber">C</span>
+                        <span id="answer_3"></span>
                     </div>
-                    <div class="card-body mb-4"><span class="questionNumber">D</span>
-                        Brisbane
+                    <div class="card-body answer-card mb-4" onclick="answer('answer_4')"><span class="questionNumber">D</span>
+                        <span id="answer_4"></span>
                     </div>
                 </div>
             </div>
