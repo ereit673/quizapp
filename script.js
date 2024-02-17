@@ -58,6 +58,7 @@ function showEndScreen() {
     document.getElementById('allQuestions').innerHTML = questions.length;
     document.getElementById('correctAnswers').innerHTML = correctAnswers;
     document.getElementById('progressBar').style.width = `100%`;
+    document.getElementById('previousButton').disabled = true;
 }
 
 function updateToNextQuestion() {

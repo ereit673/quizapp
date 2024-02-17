@@ -20,10 +20,10 @@ body {
     display: flex;
     align-self: flex-end;
     justify-content: space-between;
-    padding-right: 60px;
-    padding-left: 240px;
+    padding-right: 230px;
+    padding-left: 100px;
     padding-top: 24px;
-    width: 100%;
+    width: 80%;
 }
 
 .pageButtons{
@@ -190,4 +190,75 @@ body {
 .linkCopiedMessage{
     color: lightgreen;
     font-size: 14px;
+}
+
+@media (max-width: 850px){
+    .questionsContainer{
+        margin: 32px 30px;
+    }
+    .card-body{
+        font-size: 16px;
+        gap: 0px;
+    }
+    .pageButtonsContainer{
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .trophy{
+        height: 200px;
+    }
+}
+
+@media (max-width: 730px){
+    .questionsContainer{
+        margin: 16px 15px;
+    }
+    .card-body{
+        width: 80%;
+        font-size: 14px;
+    }
+    .card-title{
+        font-size: 16px;
+    }
+    .pageButtonsContainer{
+        padding-right: 80px;
+        padding-left: 0;
+    }
+    .startButton{
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 550px){
+    .trophy{
+        height: 150px;
+    }
+}
+
+@media (max-width: 400px){
+    h2 {
+        margin: 32px 8px;
+    }
+    .cardContainer{
+        margin-top: 32px;
+    }
+    .card-title{
+        font-size: 12px;
+    }
+    .card-body{
+        width: 100%;
+        font-size: 12px;
+    }
+    .trophy{
+        height: 100px;
+    }
+    .yourScoreText{
+        font-size: 14px;
+    }
+    .card-links{
+        font-size: 12px;
+    }
+    
 }
