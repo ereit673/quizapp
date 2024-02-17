@@ -13,8 +13,30 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    flex-direction: column;
 }
+
+.pageButtonsContainer{
+    display: flex;
+    align-self: flex-end;
+    justify-content: space-between;
+    padding-right: 60px;
+    padding-left: 240px;
+    padding-top: 24px;
+    width: 100%;
+}
+
+.pageButtons{
+    text-decoration: none;
+    color: #01040B;
+    background-color: #D9DEF4;
+    font-size: large;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 100px;
+}
+
+
 
 .cardContainer {
     display: flex;
@@ -103,4 +125,69 @@ body {
 .answer-card:hover{
     cursor:pointer;
     background-color: rgba(0,0,0,0.01);
+}
+
+.yourScoreText{
+    margin-top: 32px;
+    margin-bottom: 32px;
+    font-size: 26px;
+    font-weight: bold;
+    color: orange;
+}
+
+.endScreen{
+    padding-top: 72px;
+    gap: 0;
+    flex-direction: column;
+}
+
+.endScreenImg{
+    height: 100px;
+}
+
+.blackText{
+    color: black;
+}
+
+.replayButton{
+    margin-top: 8px;
+    background-color: transparent;
+    color: blue;
+    border: none;
+}
+
+.trophy{
+    position: absolute;
+    right:0;
+    top:200px;
+    height: 300px;
+}
+
+.startScreen{
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 0px;
+}
+
+.readyText{
+    font-weight: 200;
+}
+
+.startButton{
+    align-self: flex-end;
+    margin-right: 48px;
+    color: white;
+    background-color: #FE4F10;
+    display: flex;
+}
+
+.startButton:hover{
+    background-color: #27355C;
+    color: #FE4F10;
+}
+
+.linkCopiedMessage{
+    color: lightgreen;
+    font-size: 14px;
 }
